@@ -1,0 +1,246 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppin", sans-serif;
+}
+body{
+    background-color: hsla(60, 58%, 45%, 0.927);
+}
+.container{
+    height: 31.25em;
+    width: 31.25em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form{
+    height: 19em;
+    width: 25em;
+    border-radius: 0.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: calc(50% + 3.1em);
+    left: 50%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.3em;
+    background-color: white;
+}
+form label{
+    display: block;
+    margin-bottom: 0.2em;
+    font-weight:600;
+    color: #22082e;
+}
+form input{
+    font-size: 0.95em;
+    font-weight: 400;
+    color: #390c4e;
+    padding: 5px;
+    border: none;
+    border-bottom: 0.12em solid #390c4e;
+    outline: none;
+}
+form input:focus{
+    border-color: yellow;
+}
+form input:not(:last-child){
+    margin-bottom: 0.9em;
+}
+form button{
+    font-size: 0.95em;
+    padding: 0.8em 0 ;
+    border-radius: 2em ;
+    border: none;
+    outline: none;
+    background-color: rgb(238, 226, 63);
+    cursor: pointer;
+    color: #390c4e;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-top: 0.8em;
+    transition: 0.5s;
+}
+.panda-face{
+    height: 7.5em;
+    width: 8.4em;
+    background-color: white;
+    border: 0.18em, solid, #390c4e;
+    position: absolute;
+    top: 2em;
+    left: 0%;
+    right:0%;
+    margin: auto;
+    border-radius: 7.5em 7.5em 5.6em 5.6em;
+}
+.ear-l,
+.ear-r{
+    position: absolute;
+    height: 3.5em;
+    width: 3.5em;
+    background-color: #390c4e;
+    top: 8%;
+    border-radius: 50% 50% 0 0; 
+}
+.ear-l{
+    transform: rotate(-38deg);
+    left: 10.75em;
+}
+.ear-r{
+    transform: rotate(38deg);
+    right: 10.75em;
+}
+.eye-l,
+.eye-r{
+    position: absolute;
+    height: 2.3em;
+    width: 2.5em;
+    background-color: #390c4e;
+    top: 25%;
+    border-radius: 50% 50% 50% 50%;
+    border-spacing: 2px;
+}
+.eye-l{
+    transform: rotate(-38deg);
+    left: 1.5em;
+}
+.eye-r{
+    transform: rotate(38deg);
+    right: 1.5em;
+}
+.eyeball-l,
+.eyeball-r {
+  height: 0.9em;
+  width: 0.9em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.6em;
+  transition: 1s all;
+}
+.eyeball-l {
+    transform: rotate(20deg);
+    left: 0.8em;
+}
+.eyeball-r {
+    transform: rotate(-20deg);
+    right: 0.83em;
+}
+.hand-l,
+.hand-r{
+    height: 2.81em;
+    width: 2.5em;
+    background-color: #390c4e;
+    position: absolute;
+    top: 28%;
+    border-radius: 0 0 7.5em 7.5em;
+    border: 4px, solid, #110417;
+}
+.hand-l{
+    left: 20%;
+}
+.hand-r{
+    right: 20%;
+}
+.hand-l::after{
+    content: "";
+    height: 15px;
+    width: 1.5px;
+    background-color: rgb(255, 253, 253);
+    position: absolute;
+    left: 0.40em;
+    top:1.1em;
+    box-shadow: 1.1em 0.05em rgb(249, 248, 248);
+}
+.hand-r::after{
+    content: "";
+    height: 15px;
+    width: 1.5px;
+    background-color: rgb(255, 253, 253);
+    position: absolute;
+    left: 0.40em;
+    top:1.1em;
+    box-shadow: 1.1em 0.05em rgb(249, 248, 248);
+}
+.paw-l,
+.paw-r{
+    position: absolute;
+    height: 4em;
+    width: 4.2em;
+    background-color: #22082e;
+    top: 25.45em;
+    border-radius: 50% 50% 25% 25%;
+}
+.paw-l{
+    left: 6em;
+}
+.paw-r{
+    right: 5em;
+}
+.paw-l::before,
+.paw-r::before{
+    position: absolute;
+    content: "";
+    height: 2em;
+    width: 3em;
+    background-color: #ffffff;
+    top: 40%;
+    left: 15%;
+    border-radius: 50% 50% 20% 20%;
+}
+.paw-l::after,
+.paw-r::after{
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    background-color: #ffffff;
+    top: 15%;
+    left: 42%;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: -1em 0.3em #ffffff, 1em 0.3em #ffffff;
+}
+.nose{
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1.2em;
+    background-color: #390c4e;
+    top: 3.8em;
+    left: 3.45em;
+    border-radius: 2em 2em;
+}
+.nose::before{
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 0.1em;
+    background-color: #390c4e;
+    top: 1em;
+    left: 0.55em;
+}
+.mouth,
+.mouth:before {
+  height: 0.75em;
+  width: 0.93em;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0.18em #3f3554;
+}
+.mouth {
+  top: 5.31em;
+  left: 3.12em;
+}
+.mouth:before {
+  content: "";
+  position: absolute;
+  left: 0.91em;
+}
+
+
+
